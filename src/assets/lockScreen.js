@@ -1,0 +1,1 @@
+window.Screen.lockOrientation("portrait-primary")

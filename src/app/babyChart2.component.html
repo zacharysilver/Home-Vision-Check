@@ -1,0 +1,31 @@
+
+
+    <h2 *ngIf="notdone else elseblock">
+        {{setFontSize(fontSize)}}
+       
+    
+        <div class="chartletters">
+        <p id="chart">
+            {{d}}
+            
+        </p>
+    </div>
+    <div class="square" [style.width.px]="width" [style.height.px]="width" [style.border-width.px]="border" style="border-style: solid; border-color: black;"></div>        <div class="button">
+            <ion-button  color="success" (click)="Success()" size="large">correct</ion-button>
+        </div>
+        <div class="buttono">
+            <ion-button color="danger" (click)="Failure()" size="large">wrong</ion-button>
+        </div>
+    
+    </h2>
+    <ng-template #elseblock>
+        <div class = "letters">
+        You have finished the test. <br>
+            Your right eye vision is <b>20/{{m}}</b>. 
+        <br>
+        Your left eye vision is <b>20/{{leftVision}}</b>.
+    </div>
+    <div class="button">
+        <ion-button routerLink="../../../" size="large">Back to home</ion-button>
+    </div>
+    </ng-template>
