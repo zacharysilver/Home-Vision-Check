@@ -19,8 +19,9 @@ import { babyChart2Component } from './babyChart2.component';
 import { AdultInstructions2Component } from './adultInstructions2.component';
 import { BabyInstructions2Component } from './babyInstructions2.component';
 import {informationComponent} from './information.component'
+import { versionComponent } from './version.component';
 @NgModule({
-  declarations: [AppComponent, TypeComponent, AdultInstructionsComponent, adultChartComponent, adultChart2Component, BabyInstructionsComponent, babyChartComponent, babyChart2Component, AdultInstructions2Component, BabyInstructions2Component, informationComponent],
+  declarations: [AppComponent, TypeComponent, AdultInstructionsComponent, adultChartComponent, adultChart2Component, BabyInstructionsComponent, babyChartComponent, babyChart2Component, AdultInstructions2Component, BabyInstructions2Component, informationComponent, versionComponent],
   imports: [
     BrowserModule, 
     IonicModule.forRoot(),

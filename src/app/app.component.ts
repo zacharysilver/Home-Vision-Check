@@ -20,12 +20,12 @@ export class AppComponent implements OnInit {
       icon: 'home'
     },
     {
-      title: 'Adult Chart',
+      title: 'Adult Test',
       url: 'adultInstructions',
       icon: 'man'
     },
     {
-      title: 'Child Chart',
+      title: 'Child Test',
       url: 'babyInstructions',
       icon: 'happy'
     },
@@ -33,7 +33,13 @@ export class AppComponent implements OnInit {
       title: 'Learn More',
       url: 'information',
       icon: 'information-circle'
+    },
+    {
+      title: 'Version Info',
+      url: 'version', 
+      icon: 'information'
     }
+
   ];
   
 

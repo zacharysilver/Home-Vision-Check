@@ -10,6 +10,7 @@ import { babyChart2Component } from './babyChart2.component';
 import { AdultInstructions2Component } from './adultInstructions2.component';
 import { BabyInstructions2Component } from './babyInstructions2.component';
 import { informationComponent } from './information.component';
+import { versionComponent } from './version.component';
 
 const routes: Routes = [
   {
@@ -34,7 +35,8 @@ const routes: Routes = [
       {path: 'babyChart2', component: babyChart2Component}
     ]}
   ]},
-  {path: 'information', component: informationComponent}
+  {path: 'information', component: informationComponent},
+  {path: 'version', component: versionComponent}
 ];
 
 @NgModule({
