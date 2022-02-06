@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
-
+import {MobileAccessibility} from '@ionic-native/mobile-accessibility'
 
 
 @Component({
@@ -38,8 +38,12 @@ export class AppComponent implements OnInit {
       title: 'Version Info',
       url: 'version', 
       icon: 'information'
+    },
+    {
+      title: 'Recalibrate',
+      url: 'calibrate', 
+      icon: 'information'
     }
-
   ];
   
 
@@ -55,7 +59,10 @@ export class AppComponent implements OnInit {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+      if (MobileAccessibility){
 
+      MobileAccessibility.usePreferredTextZoom(false);
+      }
     });
   }
 

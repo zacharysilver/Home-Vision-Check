@@ -12,13 +12,11 @@ evice-width">
 
     <h2 *ngIf="notdone; else joe">
         {{setFontSize(fontSize)}}
-        
         <div class="square" [style.width.px]="width" [style.height.px]="width" [style.border-width.px]="border" style="border-style: solid; border-color: black;"></div>
 
         <div class="chartletters">
         <p id="chart">
             {{d}}
-            
         </p>
 
     </div>

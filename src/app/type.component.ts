@@ -1,4 +1,4 @@
-  
+import { Storage } from '@ionic/storage';
 import {Component} from '@angular/core';
 
 
@@ -10,12 +10,14 @@ import {Component} from '@angular/core';
     styleUrls: ['./type.component.css']
 })
 export class TypeComponent{
-    adultCont=false
-    babyCont=false
-    adult() {
-        this.adultCont=true
+    constructor(private storage: Storage) {
     }
-    baby(){
-        this.babyCont=true
-    }
+    value;
+    setValue(){
+        this.storage.get('sizing').then((val) => {
+            alert(val)
+            this.value=val;
+          });
+                  
+}
 }

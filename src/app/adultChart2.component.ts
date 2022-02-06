@@ -19,11 +19,11 @@ export class adultChart2Component{
     x=this.d
     numCorrect=0
     numWrong=0
-    fontSizes = ['twenty', 'twentyfive', 'thirtytwo', 'forty', 'fifty', 'sixtythree', 'eighty', 'onehundred', 'onetwentyfive', 'onesixty', 'twohundred']
+    //fontSizes = ['twenty', 'twentyfive', 'thirtytwo', 'forty', 'fifty', 'sixtythree', 'eighty', 'onehundred', 'onetwentyfive', 'onesixty', 'twohundred']
     fontSize = 4
     numberFontSizes = [20, 25, 32, 40, 50, 63, 80, 100, 125, 160, 200]
     notdone = true
-    q = this.fontSizes[this.fontSize]
+    //q = this.fontSizes[this.fontSize]
     m=0
     minScore = -1
     maxScore = 10
@@ -45,18 +45,18 @@ export class adultChart2Component{
             this.fontSize++
             this.numWrong=0
             this.numCorrect=0
-            this.q = this.fontSizes[this.fontSize]
+            //this.q = this.fontSizes[this.fontSize]
         }
         else if (this.numCorrect>=3) {
             this.maxScore=this.fontSize
             this.fontSize--
             this.numWrong=0
             this.numCorrect=0
-            this.q = this.fontSizes[this.fontSize]
+            //this.q = this.fontSizes[this.fontSize]
         }
         if (this.maxScore-this.minScore==1) {
             this.notdone=false
-            this.q="normal"
+            //this.q="normal"
             this.m=this.numberFontSizes[this.maxScore]
         }
         this.setFontSize(this.fontSize)

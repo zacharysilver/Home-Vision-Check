@@ -2,9 +2,18 @@
 <div class="topleft">
         <ion-menu-button></ion-menu-button>
 
+
 </div>
+<!--<div class="fardownletters">
+    <ion-button (click)="setValue()">Set</ion-button>
+</div>
+<div class="downletters">
+    <ion-button (click)="getValue()">Get</ion-button>
+</div>
+-->
+
         <div class="chartletters">
-        <label>Welcome to <b> Home Vision Check</b>. Choose either the adult or children's test. If your child can read, they should take the adult test.</label>
+        <label>Welcome to <b> Home Vision Check</b>. Choose either the adult or children's test. If your child can read, they should take the adult test. {{model}}</label>
     </div>
     <div class="buttonleft">
         <button id = "adult" routerLink='../adultInstructions'>adult</button>
@@ -12,6 +21,7 @@
     <div class="buttonright">
         <button id = "rock" routerLink="../babyInstructions">child</button>
     </div>
+
 
 
 

@@ -11,6 +11,7 @@ import { AdultInstructions2Component } from './adultInstructions2.component';
 import { BabyInstructions2Component } from './babyInstructions2.component';
 import { informationComponent } from './information.component';
 import { versionComponent } from './version.component';
+import { calibrationComponent } from './calibration.component';
 
 const routes: Routes = [
   {
@@ -36,7 +37,8 @@ const routes: Routes = [
     ]}
   ]},
   {path: 'information', component: informationComponent},
-  {path: 'version', component: versionComponent}
+  {path: 'version', component: versionComponent},
+  {path: 'calibrate', component: calibrationComponent}
 ];
 
 @NgModule({
